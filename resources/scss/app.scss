@@ -1,10 +1,34 @@
 @import '~bootstrap/scss/bootstrap';
 
-.top-header {
-    background-color: paleturquoise;
+header {
+
+    .top-header {
+        background-color: paleturquoise;
+    }
+
+    .bottom-header {
+        background-image: url('../images/img/jumbotron.jpg');
+        height: 450px;
+    }
 }
 
-.bottom-header {
-    background-image: url('../images/img/jumbotron.jpg');
-    height: 450px;
+footer {
+
+    .footer-top {
+        background-image: url('../images/img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: gray;
+
+        h4 {
+            color: white;
+        }
+
+        .footer-image {
+            background-image: url('../images/img/dc-logo-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
 }
