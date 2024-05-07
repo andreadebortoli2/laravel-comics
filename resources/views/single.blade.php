@@ -9,6 +9,17 @@ $id = $_GET['id'];
 
 @foreach($comics as $key => $comic)
 @if($key == $id)
+<div class="comic-cover bg-primary" style="height: 75px; position:relative;">
+    <div class="container">
+        <div class="card rounded-0" style="position: absolute; bottom: 20px">
+            <img class="card-img-top rounded-0" src="{{$comic['thumb']}}" alt="Title" style="height: 200px;" />
+            <div class=" card-body p-0">
+                <h4 class="card-title p-1 bg-info text-white" style="width: fit-content; position: absolute; top: 0; left: 0; font-size: 0.8rem">COMIC-BOOK</h4>
+                <p class="card-text p-1 text-center bg-info text-white">VIEW GALLERY</p>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container py-5">
     <div class="row">
         <div class="col-8">
@@ -107,7 +118,7 @@ $id = $_GET['id'];
     </div>
 </div>
 
-<div class="utilities border-1 border-top border-bottom border-secondary">
+<div class="utilities border-1 border-bottom border-secondary bg-light">
     <div class="container">
         <div class="row row-cols-4">
             <div class="col d-flex justify-content-between pt-3 border-1 border-start border-secondary">
