@@ -2,13 +2,13 @@
 
 header {
 
-    .top-header {
-        background-color: paleturquoise;
-    }
-
     .bottom-header {
         background-image: url('../images/img/jumbotron.jpg');
         height: 450px;
+    }
+
+    .active {
+        border-bottom: 2px solid blue;
     }
 }
 

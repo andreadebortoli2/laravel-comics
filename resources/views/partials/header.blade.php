@@ -1,5 +1,5 @@
 <header>
-    <div class="top-header">
+    <div class="top-header bg-primary text-white py-2">
         <div class="container">
             <div class="d-flex justify-content-end">
 
@@ -7,7 +7,7 @@
                     DC POWER VISA
                 </div>
                 <div class="dropdown">
-                    <button class="border-0 dropdown-toggle bg-transparent" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="border-0 dropdown-toggle bg-transparent text-white" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         ADDITIONAL DC SITES
                     </button>
                     <div class="dropdown-menu" aria-labelledby="triggerId">
@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="center-header">
-        <div class="container">
+        <div class="container py-2">
             <nav class="navbar navbar-expand-sm navbar-light justify-content-between">
                 <a class="navbar-brand" href="#">
                     <img src="{{Vite::asset('resources/images/img/dc-logo.png')}}" alt="">
@@ -34,11 +34,10 @@
 
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">CHARACTERS
-                                <span class="visually-hidden">(current)</span></a>
+                            <a class="nav-link" href="#">CHARACTERS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">COMICS</a>
+                            <a class="nav-link {{Route::currentRouteName() == 'home' ? 'active' : ''}}" href="/">COMICS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">MOVIES</a>
