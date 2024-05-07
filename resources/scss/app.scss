@@ -1,1 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
+
+.top-header {
+    background-color: paleturquoise;
+}
+
+.bottom-header {
+    background-image: url('../images/img/jumbotron.jpg');
+    height: 450px;
+}
