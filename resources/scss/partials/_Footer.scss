@@ -1,0 +1,22 @@
+@use './Colors.scss' as color;
+
+footer {
+
+    .footer-top {
+        background-image: url('../images/img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: gray;
+
+        h4 {
+            color: white;
+        }
+
+        .footer-image {
+            background-image: url('../images/img/dc-logo-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}

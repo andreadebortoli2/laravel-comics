@@ -1,3 +1,5 @@
+@use './partials/Header';
+@use './partials/Footer';
 @use './partials/Comics-index';
 @use './partials/Comics-show';
 @use './partials/Colors.scss' as color;
@@ -7,35 +9,7 @@ a {
     text-decoration: none;
 }
 
-header {
-
-    .bottom-header {
-        background-image: url('../images/img/jumbotron.jpg');
-        height: 450px;
-    }
-
-    .active {
-        border-bottom: 2px solid blue;
-    }
-}
-
-footer {
-
-    .footer-top {
-        background-image: url('../images/img/footer-bg.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: gray;
-
-        h4 {
-            color: white;
-        }
-
-        .footer-image {
-            background-image: url('../images/img/dc-logo-bg.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-    }
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
 }

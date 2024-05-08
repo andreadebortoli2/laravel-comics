@@ -1,0 +1,76 @@
+@use './Colors.scss' as color;
+
+header {
+
+    .top-header {
+        background-color: color.$primary-color;
+        color: color.$lightest-color;
+        font-size: 0.8rem;
+        font-weight: bold;
+
+        .wrapper {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 0.2rem 0;
+
+            button {
+                background-color: transparent;
+                color: color.$lightest-color;
+                border: none;
+                font-weight: bold;
+                margin-left: 4rem;
+            }
+        }
+
+    }
+
+    .bottom-header {
+
+        .wrapper {
+            padding: 2rem 0;
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+
+                    li {
+                        padding: 0 1rem;
+                        list-style: none;
+
+                        a {
+                            color: color.$text-color;
+                            font-weight: bold;
+                        }
+
+                        a.active {
+                            border-bottom: 2px solid color.$primary-color;
+                            color: color.$primary-color;
+                        }
+                    }
+                }
+            }
+
+            input {
+                border-radius: 0;
+                border: none;
+                border-bottom: 2px solid color.$primary-color;
+            }
+
+            &:placeholder-shown {
+                text-align: right;
+            }
+        }
+    }
+
+    .jumbotron {
+        background-image: url('../images/img/jumbotron.jpg');
+        height: 450px;
+    }
+
+}
