@@ -6,10 +6,18 @@ footer {
         background-image: url('../images/img/footer-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        color: gray;
+        color: color.$text-color;
 
-        h4 {
-            color: white;
+        .footer-nav {
+            padding: 2rem 1rem;
+
+            h4 {
+                color: color.$lightest-color;
+            }
+
+            span {
+                color: color.$primary-color;
+            }
         }
 
         .footer-image {
@@ -17,6 +25,44 @@ footer {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+        }
+    }
+
+    .footer-bottom {
+        background-color: color.$footer-bg-color;
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+
+            button {
+                color: color.$lightest-color;
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 0.5rem 1rem;
+                border: 3px solid color.$primary-color;
+                border-radius: 0;
+            }
+
+            .socials {
+                display: flex;
+                align-items: center;
+
+                span {
+                    display: block;
+                    color: color.$primary-color;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    padding: 0 1rem;
+                }
+
+                img {
+                    display: block;
+                    padding: 0 0.5rem;
+                }
+            }
         }
     }
 }
