@@ -1,0 +1,163 @@
+@use './Colors.scss' as color;
+
+.comic-cover {
+    background-color: color.$primary-color;
+    height: 4rem;
+    position: relative;
+
+    .card {
+        position: absolute;
+        bottom: 1rem;
+
+        img {
+            height: 200px;
+        }
+
+        .card-title {
+            background-color: color.$comic-cover-texts-bg;
+            color: color.$lightest-color;
+            font-size: 0.6rem;
+            padding: 0.1rem 0.3rem;
+            font-weight: lighter;
+            width: fit-content;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .card-text {
+            background-color: color.$comic-cover-texts-bg;
+            color: color.$lightest-color;
+            text-align: center;
+            padding: 0.02rem 0;
+            font-size: 0.6rem;
+            font-weight: lighter;
+        }
+    }
+}
+
+.comic-info-top {
+    background-color: color.$lightest-color;
+    padding: 3rem 0;
+
+    h2 {
+        color: color.$comic-title-color;
+        padding-bottom: 1.5rem;
+    }
+
+    .quick-info {
+        display: flex;
+        background-color: color.$comic-quick-info-bg;
+        border-bottom: 1px solid color.$darkest-color;
+
+        .left-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 0 2rem;
+
+            div {
+                color: color.$comic-quick-info-text;
+
+                span {
+                    color: color.$comic-quick-info-text-light;
+                }
+            }
+        }
+
+        .right-info {
+            border-left: 1px solid color.$darkest-color;
+            text-align: center;
+
+            .dropdown-toggle {
+                color: color.$comic-quick-info-text-light;
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .comic-description {
+        color: color.$text-color;
+        font-weight: 500;
+        padding-top: 1rem;
+    }
+
+    .advertisement {
+        padding-left: 2rem;
+
+        h4 {
+            text-align: end;
+            color: color.$text-color;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.comic-info-bottom {
+    background-color: color.$comic-info-bg;
+    border-top: 1px solid color.$comic-info-border;
+    border-bottom: 1px solid color.$comic-info-border;
+    padding: 2rem 0 8rem;
+
+    h3,
+    h5 {
+        color: color.$comic-title-color;
+    }
+
+    h3 {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid color.$comic-info-border;
+    }
+
+    p {
+        color: color.$text-color;
+
+        span {
+            color: color.$comic-cover-texts-bg;
+        }
+    }
+
+    .artist,
+    .writer,
+    .series,
+    .price,
+    .sale-date {
+        display: flex;
+        border-bottom: 1px solid color.$comic-info-border;
+    }
+}
+
+.utilities {
+    background-color: color.$comic-info-bg;
+
+    .row {
+        border-left: 1px solid color.$comic-info-border;
+
+        .col {
+            border-right: 1px solid color.$comic-info-border;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 2rem;
+
+            h4 {
+                font-size: 1rem;
+                font-weight: bold;
+                color: color.$text-color;
+                padding-top: 2rem;
+            }
+
+            img {
+                align-self: center;
+                height: 50%;
+                filter: invert(0.3);
+            }
+        }
+    }
+}
