@@ -1,0 +1,46 @@
+@use './Colors.scss' as color;
+
+.main-top {
+    background-color: color.$darkest-color;
+
+    .container {
+        position: relative;
+
+        h2 {
+            background-color: color.$primary-color;
+            color: white;
+            font-weight: bold;
+            width: fit-content;
+            padding: 0.8rem 2rem;
+            position: absolute;
+            top: 0;
+            transform: translate(0, -50%);
+        }
+
+        .container {
+            padding: 4rem 0.5rem 2rem;
+
+            .card {
+                background-color: transparent;
+
+                .card-img-top {
+                    width: 200px;
+                    aspect-ratio: 1;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .btn {
+        background-color: color.$primary-color;
+        color: color.$lightest-color;
+        padding: 0.3rem 4rem;
+        font-weight: bold;
+        display: block;
+        margin: 0 auto;
+    }
+}
