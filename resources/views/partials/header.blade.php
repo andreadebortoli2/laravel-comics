@@ -7,7 +7,8 @@
                     DC POWER VISA
                 </div>
                 <div class="dropdown">
-                    <button class="border-0 dropdown-toggle bg-transparent text-white" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="border-0 dropdown-toggle bg-transparent text-white" type="button" id="triggerId"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         ADDITIONAL DC SITES
                     </button>
                     <div class="dropdown-menu" aria-labelledby="triggerId">
@@ -27,7 +28,7 @@
         <div class="container py-2">
             <nav class="navbar navbar-expand-sm navbar-light justify-content-between">
                 <a class="navbar-brand" href="#">
-                    <img src="{{Vite::asset('resources/images/img/dc-logo.png')}}" alt="">
+                    <img src="{{ Vite::asset('resources/images/img/dc-logo.png') }}" alt="">
                 </a>
 
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -37,7 +38,8 @@
                             <a class="nav-link" href="#">CHARACTERS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{Route::currentRouteName() == 'home' ? 'active' : ''}}" href="/">COMICS</a>
+                            <a class="nav-link {{ Route::currentRouteName() == 'comics.index' ? 'active' : '' }}"
+                                href="{{ route('comics.index') }}">COMICS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">MOVIES</a>
@@ -62,7 +64,8 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHOPS</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">SHOPS</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
                                 <a class="dropdown-item" href="#">Action 1</a>
                                 <a class="dropdown-item" href="#">Action 2</a>
